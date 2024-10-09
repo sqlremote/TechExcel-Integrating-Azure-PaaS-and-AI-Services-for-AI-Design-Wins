@@ -4,8 +4,7 @@ import openai
 st.set_page_config(layout="wide")
 
 def create_chat_completion(messages):
-    """Create and return a new chat completion request. Key assumptions:
-    - The Azure OpenAI endpoint, key, and deployment name are stored in Streamlit secrets."""
+
     search_endpoint = st.secrets["search"]["endpoint"]
     search_key = st.secrets["search"]["key"]
     search_index_name = st.secrets["search"]["index_name"]
