@@ -9,7 +9,7 @@ def create_chat_completion(messages):
     search_endpoint = st.secrets["search"]["endpoint"]
     search_key = st.secrets["search"]["key"]
     search_index_name = st.secrets["search"]["index_name"]
-    # {: .important } - is this noise from the manual or supposed to put it here...ugh
+
     aoai_endpoint = st.secrets["aoai"]["endpoint"]
     aoai_key = st.secrets["aoai"]["key"]
     aoai_deployment_name = st.secrets["aoai"]["deployment_name"]
